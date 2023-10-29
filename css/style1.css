@@ -1,0 +1,542 @@
+#skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+#skip:focus {
+    position: static;
+    top: 0px;
+}
+* {
+    font-family: 'Roboto';
+}
+
+
+.navbar {
+    padding: 0;
+}
+
+.nav-links {
+    display: flex;
+    width: 100%;
+    position: absolute;
+    margin-top: 30px;
+    color: white;
+    
+}
+
+.nav-links li {
+    margin: 30px auto;
+    background-color: #f00f0f00;
+    text-transform: uppercase;
+    background-color: #666;
+
+}
+
+a.active-page, a.active, a.focus {
+    background:#0f5e9b;
+    font-weight: bold;
+    text-decoration: underline;
+    /* border: solid 1px #0f5e9b; */
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+
+
+header {
+    width: 100vw;
+    height: 50vh;
+    background-image:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../images/clouds.jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center; 
+}
+
+.header-content {
+    margin-bottom: 100px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 8vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.header-content h2 {
+    font-size: 7vmin;
+}
+.line{
+    width: 150px;
+    height: 4px;
+    background: #fc036b;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+
+section {
+    width: 90%;
+    margin: 50px auto;
+}
+.title h2{
+    text-align: center;
+    font-size: 7vmin;
+    color: #49497e;
+}
+
+.title h3{
+    text-align: center;
+    font-size: 5vmin;
+    color: #49497e;
+    margin: 20px;
+}
+
+.landmarks img {
+    max-width: 100%;
+}
+
+.landmarks .row {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.landmarks p {
+    color: #484872;
+    margin-top: 20px;
+    font-size: 24px;
+    top: 10px;
+    text-indent: 40px;
+}
+
+.links {
+    margin-top: 20px;
+    
+}
+.links a {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    margin-top: 30px;
+    display: grid;
+
+    background: #1C5673;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+    animation: example 2s infinite linear;
+}
+/* travel and recipe animation */
+@keyframes example {
+    0% {background-color: #1C5673;}
+    100%{background-color:#fc036b}
+    }
+    /* animation */
+
+
+
+.links a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.pictures h4{
+    text-align: center;
+    font-size: 7vmin;
+    color: #49497e;
+}
+.pictures .line{
+    width: 200px;
+    background: #fc036b;
+    margin-bottom: 50px;
+}
+
+
+.image-gallery figure {
+    margin: 10px;
+    text-align: center;
+}
+
+.image-gallery img {
+    max-width: 100%;
+    height: 200px;
+    border: solid #1C5673;
+}
+
+figcaption {
+    font-size: 20px;
+    color: #666;
+    margin-top: 3px;
+    padding: 10px;
+}
+
+/* travel page special */
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/france_background.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.col_2 {
+    flex-basis: 50%;
+    text-align: center;
+}
+.container h4 {
+    color: #fff;
+    font-size: 50px;
+}
+.card {
+    width: 80%;
+    height: 15vh;
+    display:inline-block;
+    border-radius: 10px;
+    padding:15px;
+    box-sizing:border-box;
+    cursor:pointer;
+    margin:10px 0px;
+
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1 {
+    background-image: url(../images/nice_france_streets.webp);
+}
+.card2 {
+    background-image: url(../images/nice_france_beach.webp);
+}
+.card3 {
+    background-image: url(../images/nice_france_people.jpeg);
+}
+.card4 {
+    background-image: url(../images/nice_france_sunset.jpeg);
+}
+.card5 {
+    background-image: url(../images/nice_france_shops.avif);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.container h5 {
+    color: #666;
+    font-weight: bold;
+    background-color: white;
+}
+
+.card p {
+    color: #444;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+
+
+/* recipes page */
+.first h2 {
+    text-align: center;
+    font-size: 7vmin;
+    color: #49497e;
+}
+.first h3 {
+    text-align: center;
+    font-size: 5vmin;
+    color: #49497e;
+    margin: 20px;
+}
+.first h4{
+    text-align: center;
+    font-size: 7vmin;
+    color: #49497e;
+    margin: 20px;
+}
+
+.first img {
+    max-width: 80%;
+}
+.first .row {
+    display: flex;
+    justify-content: center;
+}
+
+.first .food_links {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.first .food_links a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    background-color: #1C5673;
+    color: #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin: 25px auto;
+
+    /* animation */
+    animation: example 2s infinite linear;
+    /* animation */
+}
+
+.first .food_links a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.first .row p {
+    color: #484872;
+    margin-top: 20px;
+    font-size: 24px;
+    top: 10px;
+    text-indent: 40px;
+}
+
+/* Style the recipe ingredients */
+.middle {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    max-width: 800px;
+}
+.middle .recipe-ingredients {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin: 20px auto;
+    max-width: 800px; 
+}
+.middle .col {
+    flex: 1; /*makes sure that the recipe ingredients are the same size*/
+    margin: 5px; 
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; 
+}
+
+/* recipe steps */
+.recipe-information {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.first ol {
+    list-style-type: decimal; /* Use decimal numbers as list markers */
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 20px;
+    padding: 0px 40px;
+    text-align: left; 
+}
+.first ol li {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.first .food_pictures .row5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first .food_pictures figure {
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative; 
+    margin: 20px;
+    margin-top: 20px;
+}
+.first .food_pictures img {
+    border: solid #fc036b;
+}
+
+.first .food_pictures .row5 img:hover {
+    transform: scale(1.1); /* Add a scale effect on hover */
+    background-color: transparent;
+}
+
+.first .food_pictures .row5 img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* pets page */
+.pet-main h3 {
+    color: #0f5e9b;
+    text-align: center;
+    font-size: 17px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pet-main p {
+    color: #484872;
+    margin-top: 20px;
+    font-size: 24px;
+    top: 10px;
+    text-indent: 40px;
+}
+
+.pet-main .row {
+    max-height: 550px;
+    display: flex;
+    justify-content: center;
+}
+
+.pet-title h2{
+    text-align: center;
+    font-size: 7vmin;
+    color: #49497e;
+
+    animation-name: color;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+/* pet animation */
+@keyframes color {
+    from {color: #62b7e1;}
+    to {color: #fc036b8b;}
+}
+/* animation */
+
+
+
+.content-col h3 {
+    font-size: 6vmin;
+    color: #49497e;
+    margin: 20px;
+    text-align: center;
+}
+.pet-images {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+}
+.pet-images figcaption {
+    text-align: center;
+}
+.likes {
+    color: #484872;
+    margin-top: 20px;
+    font-size: 20px;
+    text-indent: 40px;
+    border: 2px solid #fc036b8b;
+    padding: 10px;
+}
+
+/* travel page - gif and static picture */
+.static{
+    display: none;
+}
+
+
+/* reduced motion */
+@media screen and (prefers-reduced-motion: reduce){
+    .first .food_links a, .links a {
+        animation: none;
+    }
+    .pet-title h2 {
+        animation: none;
+    }
+    .static {
+        display: block;
+    }
+    .gif {
+        display: none;
+    }
+}
+
+
+/* media query for tablet */
+@media only screen and (min-width: 600px) {
+    /* travel page */
+    .links {
+        margin-top: 20px;
+    }
+    .links a {
+        width: 30%;
+        display: block; 
+        margin: 15px auto;
+    }
+    .image-gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .image-gallery figure {
+        text-align: center;
+        place-content: center;
+    }
+
+    .image-gallery figure:last-child {
+        grid-column: span 2; /* Span both columns */
+    }
+    .image-gallery img {
+        max-width: 100%;
+        height: 17vh;
+        border: solid #1C5673;
+    }
+    figcaption {
+        font-size: 20px;
+        color: #666;
+        margin-top: 3px;
+        padding: 10px;
+    }
+
+    /* special travel page */
+    .container h4 {
+        font-size: 75px;
+        margin-bottom: 40px;
+    }
+    .card {
+        width: 30vw;
+        height:20vh;
+        margin:20px 10px;
+    }
+
+    /* recipe picture */
+    .first img {
+        max-width: 45vh;
+    }
+
+    /* pet pictures and likes */
+    .pet-images figure{
+        text-align: center;
+        place-content: center;
+    }
+    .likes {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 24px; 
+        text-indent: 40px;
+        text-align: center; 
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(to right,  #FFDAB9, #FFB6C1); 
+        color: black;
+}
+    
+}
+/* media query for desktop */
+@media only screen and (min-width: 768px) {
+    /* .pet-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    } */
+}
