@@ -465,6 +465,21 @@ figcaption {
 
 /* media query for tablet */
 @media only screen and (min-width: 600px) {
+    /* navigation */
+    .nav-links {
+        justify-content: flex-end;
+    }
+    .nav-links li {
+        margin: 0; 
+    }
+    .nav-links a {
+        padding: 10px 30px;
+        border-radius: 5px;
+        justify-content: space-between;
+        margin-right: 10px;
+        display: block;
+    }
+    
     /* travel page */
     .links {
         margin-top: 20px;
