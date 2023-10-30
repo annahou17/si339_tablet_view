@@ -474,12 +474,10 @@ figcaption {
     }
     .nav-links a {
         padding: 10px 30px;
-        border-radius: 5px;
-        justify-content: space-between;
         margin-right: 10px;
         display: block;
     }
-    
+
     /* travel page */
     .links {
         margin-top: 20px;
