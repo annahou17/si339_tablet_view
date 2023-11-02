@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="backToTopBtn" title="Back to Top" tabindex="0">Back to Top</button>
+
     <a href="#main" id = "skip">Skip to Main Content</a>
     <nav class="navbar">
         <ul class="nav-links">
@@ -333,6 +335,12 @@
     </section>
 
 </main>
-
+<script>
+    // Function to scroll to the top of the page
+    function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+</script>
 </body>
 </html>

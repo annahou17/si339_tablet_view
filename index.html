@@ -11,6 +11,9 @@
     
 </head>
 <body>
+    <button onclick="topFunction()" id="backToTopBtn" title="Back to Top" tabindex="0">Back to Top</button>
+    
+
     <a href="#main" id = "skip">Skip to Main Content</a>
     <!-- nav bar -->
     <nav class="navbar">
@@ -449,7 +452,38 @@
             </div>
         </div>
     </section>
+    <div>
+        <p id="rating-name">How would you rate your experience?</p>
+    </div>
+    <div class="stars" id="stars">
+        <input type="radio" id="star5" name="rating" value="5" /><label for="star5" aria-label="5 Stars" class="hidden-label"> </label>
+        <input type="radio" id="star4" name="rating" value="4" /><label for="star4" aria-label="5 Stars" class="hidden-label"> </label>
+        <input type="radio" id="star3" name="rating" value="3" /><label for="star3" aria-label="5 Stars" class="hidden-label"> </label>
+        <input type="radio" id="star2" name="rating" value="2" /><label for="star2" aria-label="5 Stars" class="hidden-label"> </label>
+        <input type="radio" id="star1" name="rating" value="1" /><label for="star1" aria-label="5 Stars" class="hidden-label"> </label>
+    </div>
+    <p id="rating-value"></p>
+    
+    <script>
+        window.addEventListener('load', function() {
+            const stars = document.getElementsByName('rating');
 
+            stars.forEach(star => {
+                star.addEventListener('change', function() {
+                    document.getElementById('rating-value').innerText = `You rated it ${this.value} stars.`;
+                });
+
+                // Reset stars on page load
+                star.checked = false;
+            });
+        });
+
+        // Function to scroll to the top of the page
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+        }
+    </script>
 </main>
 </body>
 </html>

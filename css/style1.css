@@ -9,9 +9,31 @@
 #skip:focus {
     position: static;
     top: 0px;
+    box-shadow:0 0 3px 3px rgba(0, 213, 255, 0.7);
 }
 * {
     font-family: 'Roboto';
+}
+
+#backToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #3954b5;
+    color: white;
+    cursor: pointer;
+    padding: 15px 20px;
+    border-radius: 50px;
+}
+
+#backToTopBtn:hover {
+    background-color: #0056b3;
+}
+
+#backToTopBtn:focus {
+    box-shadow: 0 0 3px 3px  #1C5673;; 
 }
 
 
@@ -40,10 +62,15 @@ a.active-page, a.active, a.focus {
     background:#0f5e9b;
     font-weight: bold;
     text-decoration: underline;
-    /* border: solid 1px #0f5e9b; */
     padding: 7px 13px;
     border-radius: 3px;
+    
+    
 }
+.nav-links a:focus {
+    box-shadow: 0 0 3px 3px  #1C5673;
+}
+
 
 
 
@@ -147,6 +174,9 @@ section {
 .links a:hover {
     text-decoration: underline;
     font-weight: bold;
+}
+.links a:focus {
+    box-shadow: 0 0 5px 5px #1C5673;
 }
 
 .pictures h4{
@@ -444,7 +474,13 @@ figcaption {
 .static{
     display: none;
 }
-
+/* travel star experience */
+#rating-name {
+    display: none;
+}
+#rating-value {
+    display: none;
+}
 
 /* reduced motion */
 @media screen and (prefers-reduced-motion: reduce){
@@ -465,6 +501,19 @@ figcaption {
 
 /* media query for tablet */
 @media only screen and (min-width: 600px) {
+    #backToTopBtn {
+        font-size: 18px;
+        padding: 12px 25px;
+        border-radius: 30px;
+        background: linear-gradient(135deg, #2471A3, #3AAED8);
+        box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s, box-shadow 0.3s;
+    }
+
+    #backToTopBtn:hover {
+        background: linear-gradient(135deg, #3AAED8, #2471A3);
+        box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.5);
+    }
     /* navigation */
     .nav-links {
         justify-content: flex-end;
@@ -544,6 +593,61 @@ figcaption {
         color: black;
 }
     
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.stars input {
+    display: none;
+}
+
+.stars label {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px; /* Adjust the space between the text and the stars */
+    font-size: 20px;
+}
+
+.stars label:before {
+    /* create icon */
+    content: '\2605'; 
+    font-size: 35px;
+    color: #ccc;
+    margin-right: 5px; 
+    padding: 10px;
+}
+
+.stars input:checked ~ label:before {
+    color: #ffcc00;
+    
+}
+#rating-name {
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+    color: #1E88E5;
+    
+}
+
+#rating-value {
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+    color: #4A4A4A;
+    font-style: italic;
+    
+}
+
+
+
+
+
+
+
+
 }
 /* media query for desktop */
 @media only screen and (min-width: 768px) {
